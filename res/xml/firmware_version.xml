@@ -27,50 +27,50 @@
         android:layout="@layout/arcana_info"
         android:selectable="false" />
 
-    <!-- device_title -->
+    <!-- version_title -->
     <Preference
-        android:key="arcana_device"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/arcana_device_title"
-        android:icon="@drawable/ic_build_number"
+        android:key="arcana_version"
+        settings:layout="@layout/top_level_preference_arc_top"
+        android:title="@string/arcana_version_title"
+        android:icon="@drawable/ic_core_member"
         settings:enableCopying="true"
         android:selectable="true"/>
-        
+
     <!-- Arcana Codename -->
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_android_version"
-        settings:layout="@layout/arc_card_about"
+        settings:layout="@layout/top_level_preference_arc_middle"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- version_title -->
+    <!-- device_title -->
     <Preference
-        android:key="arcana_version"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/arcana_version_title"
-        android:icon="@drawable/ic_core_member"
-        settings:enableCopying="true"
-        android:selectable="true"/>
-
-    <!-- arcana_release_type_title -->
-    <Preference
-        android:key="arcana_releasetype"
-        settings:layout="@layout/arc_card_about"
-        android:title="@string/arcana_release_type_title"
-        android:icon="@drawable/ic_legal"
+        android:key="arcana_device"
+        settings:layout="@layout/top_level_preference_arc_bottom"
+        android:title="@string/arcana_device_title"
+        android:icon="@drawable/ic_build_number"
         settings:enableCopying="true"
         android:selectable="true"/>
 
     <!-- maintainer_title -->
     <Preference
         android:key="arcana_maintainer"
-        settings:layout="@layout/arc_card_about"
+        settings:layout="@layout/top_level_preference_arc_top"
         android:title="@string/arcana_maintainer_title"
         android:icon="@drawable/ic_about_team"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+    <!-- arcana_release_type_title -->
+    <Preference
+        android:key="arcana_releasetype"
+        settings:layout="@layout/top_level_preference_arc_bottom"
+        android:title="@string/arcana_release_type_title"
+        android:icon="@drawable/ic_legal"
         settings:enableCopying="true"
         android:selectable="true"/>
         
@@ -79,7 +79,7 @@
         android:key="security_key"
         android:title="@string/security_patch"
         android:icon="@drawable/ic_dot_security"
-        settings:layout="@layout/arc_card_about"
+        settings:layout="@layout/top_level_preference_arc_top"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
@@ -89,7 +89,7 @@
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_settings_omnigears"
-        settings:layout="@layout/arc_card_about"
+        settings:layout="@layout/top_level_preference_arc_bottom"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
