@@ -5,24 +5,14 @@
     android:layout_height="@dimen/card_height_wave"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
-    android:layout_marginBottom="20dp"
-    android:background="@drawable/wave_preference_background_bottom"
+    android:background="@drawable/wave_preference_background_middle"
     android:paddingStart="18dp">
 
     <ImageView
         android:id="@android:id/icon"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.preference.internal.PreferenceImageView
-        android:id="@+id/google_pref_icon"
         android:padding="1.5dp" 
         android:layout_width="@dimen/dashboard_icon_size"
         android:layout_height="@dimen/dashboard_icon_size"
-        android:src="@drawable/ic_homepage_google_settings"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
         app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +25,7 @@
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:layout_marginStart="@dimen/top_pref_start"
-        app:layout_constraintStart_toEndOf="@+id/google_pref_icon">
+        app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
             android:id="@android:id/title"
@@ -52,7 +42,6 @@
             android:layout_height="0dp"
             android:layout_marginTop="0dp"
             android:singleLine="true" />
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="28dp"
@@ -75,3 +64,4 @@
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
