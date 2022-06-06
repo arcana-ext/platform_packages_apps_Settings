@@ -633,13 +633,11 @@ public class TopLevelSettings extends DashboardFragment implements
             }
             if (key.equals("top_level_about_device")){
                 preference.setLayoutResource(R.layout.top_level_preference_wave_bottom);
-            }
-            if (key.equals("top_level_about_device")){
-                preference.setLayoutResource(R.layout.top_level_preference_wave);
-            }      
+            }     
 	}
     }
-    
+    }
+
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
