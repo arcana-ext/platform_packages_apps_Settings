@@ -36,6 +36,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.text.TextUtils;
 import android.util.Log;
+import android.os.UserHandle;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -92,6 +93,10 @@ public class TopLevelSettings extends DashboardFragment implements
                return R.xml.top_level_settings_oos12;
            case 4:
                return R.xml.top_level_settings_oos12;
+           case 5:
+               return R.xml.top_level_settings_wave;
+           case 6:
+               return R.xml.top_level_settings_wave;
            default:
                return R.xml.top_level_settings_aosp;
         }
@@ -203,17 +208,11 @@ public class TopLevelSettings extends DashboardFragment implements
         if (screen == null) {
             return;
         }
-        // Tint the homepage icons
-        final int tintColor = Utils.getHomepageIconColor(getContext());
         final int count = screen.getPreferenceCount();
         for (int i = 0; i < count; i++) {
             final Preference preference = screen.getPreference(i);
             if (preference == null) {
                 break;
-            }
-            final Drawable icon = preference.getIcon();
-            if (icon != null) {
-                icon.setTint(tintColor);
             }
         onSetPrefCard();
         }
@@ -502,8 +501,30 @@ public class TopLevelSettings extends DashboardFragment implements
             if (key.equals("top_level_accounts")){
                 preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
             }
-          }
-          
+          } else if (mDashBoardStyle == 5) {
+            if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_wave);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_wave);
+            }
+	    if (key.equals("top_level_google")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_wave);
+            }
+	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_wave);
+            }
+	    if (key.equals("top_level_wellbeing")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_wave);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_middle);
+            }
+            } else if (mDashBoardStyle == 6) {
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+            }
+            }        
 	}
     }
     
