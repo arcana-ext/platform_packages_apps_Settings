@@ -243,7 +243,7 @@ public class TopLevelSettings extends DashboardFragment implements
         if (key.equals("top_level_connected_devices")){
             preference.setLayoutResource(R.layout.top_level_preference_wave_bottom);
         }
-        if (key.equals("top_level_rice")){
+        if (key.equals("top_level_grimoire")){
             preference.setLayoutResource(R.layout.top_level_preference_wave_top);
         }
         if (key.equals("top_level_wallpaper")){
