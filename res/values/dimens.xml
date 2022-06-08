@@ -475,7 +475,7 @@
     <dimen name="dashboard_icon_size">42dp</dimen>
     <dimen name="top_pref_start">60dp</dimen>
     <!-- Card Layout Arcana -->
-    <dimen name="arcana_icon_size">24dp</dimen>
+    <dimen name="arcana_icon_size">28dp</dimen>
     <!-- Card Layout OOS 12-->
     <dimen name="card_margin_start_oos12">0.0dp</dimen>
     <dimen name="card_margin_end_oos12">0.0dp</dimen>

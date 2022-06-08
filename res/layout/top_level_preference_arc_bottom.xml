@@ -5,15 +5,15 @@
     android:layout_height="@dimen/card_height"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
-    android:background="@drawable/arcana_preference_top_background"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/arcana_preference_bottom_background"
     android:paddingEnd="15dp"
     android:paddingStart="18dp">
 
     <ImageView
         android:id="@android:id/icon"
-        android:padding="1.5dp" 
-        android:layout_width="@dimen/dashboard_icon_size"
-        android:layout_height="@dimen/dashboard_icon_size"
+        android:layout_width="@dimen/arcana_icon_size"
+        android:layout_height="@dimen/arcana_icon_size"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
         app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="@dimen/top_pref_start"
+        android:layout_marginStart="50dp"
         app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/op_control_text_color_primary"
             android:singleLine="true"
-            style="@style/op_control_text_style_h6"
             android:textSize="16sp" />
 
         <TextView
@@ -44,6 +43,5 @@
             android:layout_marginTop="2dp"
             android:singleLine="true"
             android:textColor="@color/op_control_text_color_secondary"
-            style="@style/op_control_text_style_body1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
