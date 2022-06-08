@@ -27,26 +27,6 @@
         android:layout="@layout/arcana_info"
         android:selectable="false" />
 
-    <!-- device_title -->
-    <Preference
-        android:key="arcana_device"
-        settings:layout="@layout/top_level_preference_top"
-        android:title="@string/arcana_device_title"
-        android:icon="@drawable/ic_build_number"
-        settings:enableCopying="true"
-        android:selectable="true"/>
-        
-    <!-- Arcana Codename -->
-    <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_android_version"
-        settings:layout="@layout/top_level_preference_bottom"
-        settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
     <!-- version_title -->
     <Preference
         android:key="arcana_version"
@@ -56,21 +36,41 @@
         settings:enableCopying="true"
         android:selectable="true"/>
 
-    <!-- arcana_release_type_title -->
+    <!-- Arcana Codename -->
     <Preference
-        android:key="arcana_releasetype"
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_android_version"
         settings:layout="@layout/top_level_preference_middle"
-        android:title="@string/arcana_release_type_title"
-        android:icon="@drawable/ic_legal"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- device_title -->
+    <Preference
+        android:key="arcana_device"
+        settings:layout="@layout/top_level_preference_bottom"
+        android:title="@string/arcana_device_title"
+        android:icon="@drawable/ic_build_number"
         settings:enableCopying="true"
         android:selectable="true"/>
 
     <!-- maintainer_title -->
     <Preference
         android:key="arcana_maintainer"
-        settings:layout="@layout/top_level_preference_bottom"
+        settings:layout="@layout/top_level_preference_top"
         android:title="@string/arcana_maintainer_title"
         android:icon="@drawable/ic_about_team"
+        settings:enableCopying="true"
+        android:selectable="true"/>
+
+    <!-- arcana_release_type_title -->
+    <Preference
+        android:key="arcana_releasetype"
+        settings:layout="@layout/top_level_preference_bottom"
+        android:title="@string/arcana_release_type_title"
+        android:icon="@drawable/ic_legal"
         settings:enableCopying="true"
         android:selectable="true"/>
         
