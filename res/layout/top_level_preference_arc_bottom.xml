@@ -12,6 +12,7 @@
 
     <ImageView
         android:id="@android:id/icon"
+        android:padding="1.5dp" 
         android:layout_width="@dimen/arcana_icon_size"
         android:layout_height="@dimen/arcana_icon_size"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
@@ -25,7 +26,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="@dimen/top_pref_start"
         app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/op_control_text_color_primary"
             android:singleLine="true"
+            style="@style/op_control_text_style_h6"
             android:textSize="16sp" />
 
         <TextView
@@ -43,5 +45,6 @@
             android:layout_marginTop="2dp"
             android:singleLine="true"
             android:textColor="@color/op_control_text_color_secondary"
+            style="@style/op_control_text_style_body1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
