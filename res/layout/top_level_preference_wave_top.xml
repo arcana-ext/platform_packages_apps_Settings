@@ -11,8 +11,8 @@
     <ImageView
         android:id="@android:id/icon"
         android:padding="1.5dp" 
-        android:layout_width="@dimen/dashboard_icon_size"
-        android:layout_height="@dimen/dashboard_icon_size"
+        android:layout_width="@dimen/arcana_icon_size"
+        android:layout_height="@dimen/arcana_icon_size"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
         app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
         app:layout_constraintBottom_toBottomOf="parent"
