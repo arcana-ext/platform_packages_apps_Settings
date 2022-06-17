@@ -22,8 +22,11 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
-
+import android.content.pm.ResolveInfo;
+import android.content.ContentResolver;
+import android.provider.Settings;
 import androidx.preference.Preference;
+import android.os.UserHandle;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -40,6 +43,12 @@ public class QuickSettings extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.grimoire_qs);
         
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.QS_TRANSPARENCY, 100, UserHandle.USER_CURRENT);
     }
 
     @Override

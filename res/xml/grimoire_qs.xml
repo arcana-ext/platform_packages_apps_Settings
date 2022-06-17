@@ -33,6 +33,21 @@
             
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/qs_transparency_catagory_title">
+
+        <org.arcana.support.preference.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
+    </PreferenceCategory>
+
      <PreferenceCategory
         android:title="@string/notification_material_dismiss_button_title">
         
