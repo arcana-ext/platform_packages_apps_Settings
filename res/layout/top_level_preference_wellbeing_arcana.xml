@@ -10,14 +10,6 @@
 
     <ImageView
         android:id="@android:id/icon"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.preference.internal.PreferenceImageView
-        android:id="@+id/wb_pref_icon"
         android:padding="1.5dp" 
         android:layout_width="@dimen/arcana_icon_size"
         android:layout_height="@dimen/arcana_icon_size"
