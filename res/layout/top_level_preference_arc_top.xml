@@ -5,7 +5,7 @@
     android:layout_height="@dimen/card_height"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
-    android:background="@drawable/arcana_preference_top_background"
+    android:background="@drawable/wave_preference_background_top"
     android:paddingEnd="15dp"
     android:paddingStart="18dp">
 
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="@dimen/top_pref_start"
+        android:layout_marginStart="52dp"
         app:layout_constraintStart_toEndOf="@android:id/icon">
 
         <TextView
