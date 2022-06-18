@@ -39,31 +39,6 @@
         android:fragment="com.android.settings.AboutUs" />
 
     </PreferenceCategory>
-    
-    <PreferenceCategory
-        android:key="basic_info_category"
-        android:selectable="false"
-        android:title="@string/my_device_info_basic_info_category_title">
-
-        <!-- Account name -->
-        <Preference
-            android:key="branded_account"
-            android:order="3"
-            android:title="@string/my_device_info_account_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
-
-        <!-- Phone number -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="phone_number"
-            android:order="4"
-            android:title="@string/status_number"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-            settings:enableCopying="true"/>
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="device_detail_category"
@@ -109,6 +84,31 @@
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="basic_info_category"
+        android:selectable="false"
+        android:title="@string/my_device_info_basic_info_category_title">
+
+        <!-- Account name -->
+        <Preference
+            android:key="branded_account"
+            android:order="3"
+            android:title="@string/my_device_info_account_preference_title"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+
+        <!-- Phone number -->
+        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
+            android:key="phone_number"
+            android:order="4"
+            android:title="@string/status_number"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
+            settings:enableCopying="true"/>
     </PreferenceCategory>
 
     <PreferenceCategory
