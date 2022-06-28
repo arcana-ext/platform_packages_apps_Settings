@@ -51,7 +51,8 @@
     <string name="battery_category">Battery styles</string>
     <string name="lockscreen_category">Lockscreen Interface</string>
     <string name="navigation_category">Navigation bar</string>
-    <string name="grimoire_illustration_summary">Welcome to the secret shop!</string>
+    <string name="grimoire_card_title">Welcome to the secret shop!</string>
+    <string name="grimoire_card_summary">Explore the limits</string>
     <string name="battery_life_category">Battery life</string>
     <string name="statusbar_clock_category_title">Status Bar Clock</string>
     <string name="statusbar_settings_title">Status Bar</string>
