@@ -36,7 +36,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_github" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://github.com/projectarcana-aosp" />
+               android:data="https://github.com/arcana-ext" />
         </Preference>
 
         <Preference
@@ -45,25 +45,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_telegram" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://t.me/ArcaneOSUpdates" />
-        </Preference>
-
-        <Preference
-            android:title="@string/web"
-    android:summary="@string/web_description"
-    android:icon="@drawable/ic_web" >
-    <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://store.kde.org/p/1619738/" />
-        </Preference>
-
-        <Preference
-            android:title="@string/help_translate"
-    android:summary="@string/help_translate_description"
-    android:icon="@drawable/ic_trans" >
-    <intent
-               android:action="android.intent.action.VIEW"
-               android:data="http://translate.aospextended.com/" />
+               android:data="https://t.me/Predators_Abode" />
         </Preference>
 
      </PreferenceCategory>
@@ -91,7 +73,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_core_member" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="https://github.com/Joaquin-000" />
+               android:data="https://github.com/soumyajit007-creator" />
         </Preference>
 
        <Preference
@@ -100,12 +82,21 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_core_member" >
     <intent
                android:action="android.intent.action.VIEW"
+               android:data="https://github.com/Joaquin-000" />
+        </Preference>
+
+       <Preference
+            android:title="@string/team_4"
+    android:summary="@string/team4_description"
+    android:icon="@drawable/ic_core_member" >
+    <intent
+               android:action="android.intent.action.VIEW"
                android:data="https://github.com/Hazama25" />
         </Preference>
         
        <Preference
-            android:title="@string/team_4"
-    android:summary="@string/team4_description"
+            android:title="@string/team_5"
+    android:summary="@string/team5_description"
     android:icon="@drawable/ic_core_member" >
     <intent
                android:action="android.intent.action.VIEW"
