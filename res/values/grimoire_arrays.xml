@@ -110,6 +110,7 @@
     <!-- Settings dashboard styles-->
     <string-array name="settings_dashboard_style_entries" translatable="false">
         <item>@string/settings_dashboard_style_arcana</item>
+        <item>@string/settings_dashboard_style_aosp</item>
         <item>@string/settings_dashboard_style_oos11</item>
         <item>@string/settings_dashboard_style_oos12</item>
     </string-array>
@@ -118,6 +119,7 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
     
     <!-- Status bar - Clock -->

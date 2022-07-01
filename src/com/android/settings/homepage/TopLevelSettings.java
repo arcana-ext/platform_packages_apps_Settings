@@ -84,13 +84,15 @@ public class TopLevelSettings extends DashboardFragment implements
     protected int getPreferenceScreenResId() {
         switch (mDashBoardStyle) {
            case 0:
-               return R.xml.top_level_settings_aosp;
+               return R.xml.top_level_settings_arcana;
            case 1:
-               return R.xml.top_level_settings_oos11;
+               return R.xml.top_level_settings_aosp;
            case 2:
+               return R.xml.top_level_settings_oos11;
+           case 3:
                return R.xml.top_level_settings_oos12;
            default:
-               return R.xml.top_level_settings_aosp;
+               return R.xml.top_level_settings_arcana;
         }
     }
 
@@ -304,6 +306,10 @@ public class TopLevelSettings extends DashboardFragment implements
             }
 	        } else if (mDashBoardStyle == 1) {
             if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_aosp);
+	        }
+	        } else if (mDashBoardStyle == 2) {
+            if (key.equals("top_level_usercard")){
 	        preference.setLayoutResource(R.layout.usercard_oos11);
 	        }
 	        if (key.equals("top_level_network")){
@@ -375,7 +381,7 @@ public class TopLevelSettings extends DashboardFragment implements
             if (key.equals("top_level_accounts")){
                 preference.setLayoutResource(R.layout.top_level_preference_middle);
             }
-	        } else if (mDashBoardStyle == 2) {
+	        } else if (mDashBoardStyle == 3) {
 	        if (key.equals("top_level_usercard")){
 	        preference.setLayoutResource(R.layout.usercard_oos12);
 	        }
