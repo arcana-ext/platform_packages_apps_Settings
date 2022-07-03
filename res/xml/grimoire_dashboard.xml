@@ -66,15 +66,6 @@
             android:summary="@string/notifications_settings_summary"
             android:fragment="com.arcana.grimoire.fragments.Notifications" />
             
-        <!-- quick settings -->
-        <Preference
-            android:key="qs_category"
-            settings:layout="@layout/grimoire_dashboard_preference_middle"
-            android:icon="@drawable/op_ic_grimoire_qs_settings"
-            android:title="@string/qs_settings_title"
-            android:summary="@string/qs_settings_summary"
-            android:fragment="com.arcana.grimoire.fragments.QuickSettings" />
-            
         <!-- Statusbar -->
         <Preference
             android:key="statusbar_category"
