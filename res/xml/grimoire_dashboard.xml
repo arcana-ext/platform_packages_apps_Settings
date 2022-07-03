@@ -51,7 +51,7 @@
         <!-- lockscreen -->
         <Preference
             android:key="lockscreen_category"
-            settings:layout="@layout/grimoire_dashboard_preference_middle"
+            settings:layout="@layout/grimoire_dashboard_preference_bottom"
             android:icon="@drawable/op_ic_grimoire_lockscreen_settings"
             android:title="@string/lockscreen_settings_title"
             android:summary="@string/lockscreen_settings_summary"
@@ -60,7 +60,7 @@
         <!-- notifications settings -->
         <Preference
             android:key="notification_category"
-            settings:layout="@layout/grimoire_dashboard_preference_middle"
+            settings:layout="@layout/grimoire_dashboard_preference_top"
             android:icon="@drawable/op_ic_grimoire_notifications_settings"
             android:title="@string/notifications_settings_title"
             android:summary="@string/notifications_settings_summary"
