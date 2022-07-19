@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <RelativeLayout
 	android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:gravity="center_vertical"
@@ -54,7 +54,7 @@
             android:layout_alignParentEnd="true"
             app:cardBackgroundColor="@color/wave_homepage_icon_background"
             app:cardElevation="0dp"
-            app:cardCornerRadius="24dp">
+            app:cardCornerRadius="22dp">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -65,5 +65,5 @@
 
         </androidx.cardview.widget.CardView>
 
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
