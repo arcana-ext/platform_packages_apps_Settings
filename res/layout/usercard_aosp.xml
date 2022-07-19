@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
+    android:layout_marginBottom="@dimen/grimoire_card_margin"
     android:background="@drawable/arcana_card_aosp"
     android:layout_marginVertical="8dp"
     android:padding="4dp"
