@@ -58,7 +58,7 @@
     <string name="statusbar_settings_title">Status Bar</string>
     <string name="statusbar_settings_summary">Manuever those glyphs from above!</string>
     <string name="lockscreen_settings_title">Lockscreen</string>
-    <string name="lockscreen_settings_summary">The cryptkeeper\'s lair needs a little grooming</string>
+    <string name="lockscreen_settings_summary">The lockscreen needs a little grooming</string>
     <string name="theme_settings_title">Device Theming</string>
     <string name="theme_settings_summary">Art is one\'s existence</string>
     <string name="qs_settings_title">QuickSettings</string>
