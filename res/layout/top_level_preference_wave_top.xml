@@ -5,6 +5,7 @@
     android:layout_height="@dimen/card_height_wave"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
+    android:layout_marginBottom="2dp"
     android:background="@drawable/wave_preference_background_top"
     android:paddingStart="18dp">
 
